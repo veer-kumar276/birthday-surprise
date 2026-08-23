@@ -1,8 +1,1651 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Happy Birthday Madam Jiii 🌷</title><style>*{box-sizing:border-box}body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;font-family:Arial,sans-serif;color:#3d2940;background:linear-gradient(135deg,#fff0f7,#f4efff,#fff8ec);overflow:hidden}body:before,body:after{content:"🌷";position:fixed;font-size:58px;opacity:.18;animation:f 4s ease-in-out infinite;z-index:-1}body:before{left:5%;top:10%}body:after{right:5%;bottom:10%;animation-delay:1s}.card{width:min(850px,92%);max-height:92vh;overflow:auto;padding:42px 30px;border-radius:34px;background:#ffffffdf;box-shadow:0 20px 60px #0002;text-align:center}.page{display:none;animation:in .45s ease}.page.active{display:block}.flower{font-size:60px;animation:f 2.5s ease-in-out infinite}h1{font-size:clamp(34px,8vw,60px);margin:12px 0}h2{margin:10px 0}p{font-size:18px;line-height:1.75}.badge{display:inline-block;padding:8px 15px;border-radius:999px;background:#fff0f7;font-size:14px}button{border:0;border-radius:999px;padding:14px 24px;margin:9px;font-size:16px;cursor:pointer;transition:.2s}.yes,.next{background:#3d2940;color:white}.no{background:#f3e5ee;color:#3d2940}.quote{padding:20px;border-radius:24px;background:#fff7fb;margin:22px auto;max-width:650px}.secret{font-size:58px;margin:20px}.small{font-size:14px;opacity:.65}@keyframes f{50%{transform:translateY(-9px) rotate(3deg)}}@keyframes in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}</style></head><body><main class="card">
-<section class="page active" id="p1"><div class="flower">🌷</div><div class="badge">Okay Madam Jiii... one tiny question 👀</div><h1>Do you like your birthday? 🎂</h1><p>Be honest. There is definitely no wrong answer... probably. 😂</p><button class="yes" onclick="go(2)">YESSS 🎉</button><button class="no" onclick="run(this)">No 😶</button></section>
-<section class="page" id="p2"><div class="flower">🌷</div><h1>Hmmmm... 👀</h1><h2>One more important question.</h2><p>Do you know what is special about <b>21st September</b>? 🤔</p><button class="yes" onclick="go(3)">YES 😌</button><button class="no" onclick="run(this)">No 🙃</button></section>
-<section class="page" id="p3"><div class="flower">🌷✨🌷</div><h1>Correct answer! 😂</h1><p>Okay okay... enough questions.<br>You probably figured out that something was coming. 😭</p><button class="next" onclick="go(4)">Okay, show me 👀</button></section>
-<section class="page" id="p4"><div class="flower">🌷</div><h1>Happy Birthday Madam Jiii 🌷</h1><h2>aka Vampire Jiii 🧛‍♀️😂</h2><div class="quote">Aaj ka din officially special hai, kyunki aaj <b>Vampire Jiii</b> ka birthday hai 🌷😂<br><br>Bas ek chhoti si wish hai — hamesha aise hi khush rehna, smile karti rehna, aur apni woh <i>“main bahut busy hoon, baad mein padhungi”</i> wali busy life mein thoda time happiness ke liye bhi nikalna 😂<br><br>Football ki language mein: <b>keep playing till the final whistle.</b> ⚽ Life mein har match jeetna zaroori nahi hota, bas apni team ke liye last minute tak believe karna zaroori hota hai.</div><p>I hope this year brings you more wins than losses, more smiles than stress, and lots of moments worth remembering. 🌷</p><button class="next" onclick="go(5)">Wait... there's more 👀</button></section>
-<section class="page" id="p5"><div class="secret">🎁🌷⚽🌷🎁</div><h1>Okay, Madam Jiii...</h1><p>You've unlocked <b>Surprise #1</b> 😭</p><p>🌷 🫶 🌷 🫶 🌷</p><p>May your birthday be full of the kind of moments that make you randomly smile later for absolutely no reason. 😂</p><button class="next" onclick="go(6)">One last click 👀</button></section>
-<section class="page" id="p6"><div class="secret">🎉🎂🌷⚽🌷🎂🎉</div><h1>FINAL SURPRISE! 💫</h1><h2>Happy Birthday, Vampire Jiii 🌷🧛‍♀️</h2><p>Keep smiling, keep being yourself, keep supporting your teams 😂⚽, and may this year give you a whole lot of reasons to say: <b>“Okay, this was actually a good year.”</b></p><p>Birthday rule officially says:<br><b>NO DRY REPLIES TODAY. 😂😭</b></p><div class="flower">🌷🫶🌷</div><p class="small">Made with a little coding, a lot of bakchodi, and some birthday wishes. ❤️</p></section>
-</main><script>function go(n){document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));document.getElementById('p'+n).classList.add('active')}function run(b){b.style.position='fixed';b.style.left=Math.max(10,Math.random()*(innerWidth-b.offsetWidth-20))+'px';b.style.top=Math.max(10,Math.random()*(innerHeight-b.offsetHeight-20))+'px';b.textContent=['No 😶','Are you sure? 👀','Really? 😂','Think again 🌷','Nope? 😭'][Math.floor(Math.random()*5)]}</script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Madam Jiii 🌷</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ffe6ef, #fff4d6, #e7f2ff);
+    color: #513746;
+}
+
+.page {
+    display: none;
+    min-height: 100vh;
+    padding: 25px 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.page.active {
+    display: flex;
+}
+
+.card {
+    width: min(950px, 95vw);
+    background: rgba(255,255,255,0.9);
+    border-radius: 28px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 15px 45px rgba(70,40,60,0.18);
+}
+
+h1 {
+    font-size: clamp(30px, 6vw, 50px);
+}
+
+h2 {
+    font-size: clamp(23px, 4vw, 35px);
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.message {
+    font-size: 20px;
+}
+
+
+/* ==================================================
+   PREMIUM ILLUSTRATED BOUQUET
+================================================== */
+
+.bouquet {
+    position: relative;
+    width: 500px;
+    height: 560px;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bouquet svg {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    filter: drop-shadow(0 12px 16px rgba(70,40,60,0.12));
+}
+
+.bouquet .b-flower {
+    transform-box: fill-box;
+    transform-origin: center bottom;
+    animation: bouquetBloom .75s cubic-bezier(.17,.89,.32,1.28) both;
+}
+
+@keyframes bouquetBloom {
+    0% { opacity: 0; transform: translateY(35px) scale(.35) rotate(-8deg); }
+    70% { opacity: 1; transform: translateY(-4px) scale(1.06) rotate(3deg); }
+    100% { opacity: 1; transform: translateY(0) scale(1) rotate(0); }
+}
+
+.bouquet .b-leaf {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: leafPop .55s ease-out both;
+}
+
+@keyframes leafPop {
+    from { opacity: 0; transform: scale(.5); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.bouquet .b-sparkle {
+    animation: sparkleFloat 2s ease-in-out infinite;
+}
+
+@media(max-width:700px) {
+    .bouquet {
+        width: 330px;
+        height: 390px;
+    }
+}
+
+
+/* ================= BUTTONS ================= */
+
+button {
+    border: none;
+    border-radius: 50px;
+    padding: 13px 25px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 7px 18px rgba(70,40,60,0.15);
+}
+
+.yes {
+    background: #ff8daf;
+    color: white;
+}
+
+.no {
+    background: #eeeeee;
+    color: #555;
+}
+
+.button-area {
+    height: 150px;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 18px;
+}
+
+
+/* ================= PHOTOS ================= */
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.photo-card {
+    background: white;
+    padding: 9px;
+    border-radius: 18px;
+    box-shadow: 0 7px 18px rgba(70,40,60,0.12);
+}
+
+.photo-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.photo-card p {
+    font-size: 14px;
+    margin: 9px 3px;
+}
+
+
+/* ================= FLOWERS ================= */
+
+.flower-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 14px;
+    max-width: 720px;
+    margin: 25px auto;
+}
+
+.flower {
+    background: white;
+    border: 3px solid transparent;
+    border-radius: 18px;
+    padding: 14px 8px;
+    font-size: 40px;
+}
+
+.flower.selected {
+    border-color: #ff8daf;
+    transform: translateY(-5px);
+}
+
+.flower-name {
+    display: block;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+
+/* ==================================================
+   PREMIUM ANIMATED BOUQUET
+================================================== */
+
+.bouquet {
+    position: relative;
+    width: 380px;
+    height: 340px;
+    margin: 20px auto;
+}
+
+
+/* soft glow */
+
+.bouquet::before {
+    content: "";
+
+    position: absolute;
+
+    width: 260px;
+    height: 180px;
+
+    left: 50%;
+    top: 65px;
+
+    transform: translateX(-50%);
+
+    background: radial-gradient(
+        circle,
+        rgba(255,182,210,0.35),
+        transparent 70%
+    );
+
+    filter: blur(10px);
+}
+
+
+/* ================= STEMS ================= */
+
+.stem {
+    position: absolute;
+
+    bottom: 70px;
+    left: 50%;
+
+    width: 5px;
+    height: 170px;
+
+    background: linear-gradient(
+        to right,
+        #477b4d,
+        #86b779,
+        #477b4d
+    );
+
+    border-radius: 10px;
+
+    transform-origin: bottom center;
+
+    animation:
+        stemGrow 1s ease-out forwards;
+}
+
+@keyframes stemGrow {
+
+    from {
+        height: 0;
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* ================= LEAVES ================= */
+
+.leaf {
+    position: absolute;
+
+    width: 30px;
+    height: 14px;
+
+    background: linear-gradient(
+        135deg,
+        #8fbd7e,
+        #4f8b55
+    );
+
+    border-radius: 100% 0 100% 0;
+
+    transform-origin: left center;
+
+    opacity: 0;
+
+    animation:
+        leafAppear 0.6s ease-out forwards;
+}
+
+@keyframes leafAppear {
+
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* ================= FLOWERS ================= */
+
+.bouquet-flower {
+    position: absolute;
+
+    font-size: 58px;
+
+    opacity: 0;
+
+    filter:
+        drop-shadow(
+            0 6px 5px
+            rgba(80,40,60,0.15)
+        );
+
+    transform-origin:
+        center bottom;
+
+    animation:
+        bloomIn 0.9s
+        cubic-bezier(.17,.89,.32,1.28)
+        forwards;
+}
+
+@keyframes bloomIn {
+
+    0% {
+        opacity: 0;
+
+        transform:
+            translateY(70px)
+            scale(0.15)
+            rotate(-15deg);
+    }
+
+    65% {
+        opacity: 1;
+
+        transform:
+            translateY(-8px)
+            scale(1.12)
+            rotate(5deg);
+    }
+
+    100% {
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1)
+            rotate(0);
+    }
+}
+
+
+/* ================= WRAPPING PAPER ================= */
+
+.wrapper {
+    position: absolute;
+
+    left: 50%;
+    bottom: 15px;
+
+    width: 205px;
+    height: 125px;
+
+    transform:
+        translateX(-50%)
+        perspective(200px)
+        rotateX(-5deg);
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffd9e6,
+            #f5b8d0
+        );
+
+    clip-path: polygon(
+        7% 0,
+        93% 0,
+        100% 100%,
+        0 100%
+    );
+
+    border-radius: 7px;
+
+    box-shadow:
+        0 12px 20px
+        rgba(80,40,60,0.15);
+
+    opacity: 0;
+
+    animation:
+        wrapperIn 0.9s
+        0.15s
+        ease-out
+        forwards;
+}
+
+@keyframes wrapperIn {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateX(-50%)
+            translateY(30px)
+            scale(.8);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateX(-50%)
+            translateY(0)
+            scale(1);
+    }
+}
+
+
+/* paper folds */
+
+.wrapper::before,
+.wrapper::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    width: 50%;
+    height: 100%;
+
+    opacity: .25;
+}
+
+.wrapper::before {
+
+    left: 0;
+
+    background:
+        linear-gradient(
+            110deg,
+            transparent 45%,
+            white 48%,
+            transparent 52%
+        );
+}
+
+.wrapper::after {
+
+    right: 0;
+
+    background:
+        linear-gradient(
+            70deg,
+            transparent 45%,
+            white 48%,
+            transparent 52%
+        );
+}
+
+
+/* ================= RIBBON ================= */
+
+.ribbon {
+
+    position: absolute;
+
+    z-index: 20;
+
+    bottom: 57px;
+    left: 50%;
+
+    width: 38px;
+    height: 70px;
+
+    transform:
+        translateX(-50%);
+
+    background:
+        linear-gradient(
+            90deg,
+            #ff759d,
+            #ffabc3,
+            #ff759d
+        );
+
+    border-radius: 7px;
+
+    opacity: 0;
+
+    animation:
+        ribbonIn .7s
+        .6s
+        ease-out
+        forwards;
+}
+
+@keyframes ribbonIn {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateX(-50%)
+            scale(0);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateX(-50%)
+            scale(1);
+    }
+}
+
+
+/* ribbon loops */
+
+.ribbon::before,
+.ribbon::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 42px;
+    height: 28px;
+
+    top: 5px;
+
+    border: 6px solid #ff8eaf;
+
+    border-radius: 50%;
+}
+
+.ribbon::before {
+    right: 23px;
+    transform: rotate(25deg);
+}
+
+.ribbon::after {
+    left: 23px;
+    transform: rotate(-25deg);
+}
+
+
+/* ================= SPARKLES ================= */
+
+.sparkle {
+
+    position: absolute;
+
+    font-size: 21px;
+
+    opacity: 0;
+
+    animation:
+        sparkleFloat
+        2s
+        ease-in-out
+        infinite;
+}
+
+@keyframes sparkleFloat {
+
+    0%,100% {
+        opacity: 0;
+
+        transform:
+            scale(.4)
+            translateY(5px);
+    }
+
+    50% {
+        opacity: 1;
+
+        transform:
+            scale(1.15)
+            translateY(-5px);
+    }
+}
+
+
+/* ================= LAST PHOTOS ================= */
+
+.last-photo-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    gap: 13px;
+}
+
+.last-photo-grid img {
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 17px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:700px) {
+
+    .photo-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .flower-grid {
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+    .last-photo-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .last-photo-grid img {
+        height: 240px;
+    }
+
+    .bouquet {
+        width: 320px;
+        height: 320px;
+    }
+
+    .bouquet-flower {
+        font-size: 48px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     PAGE 1
+================================================== -->
+
+<section class="page active">
+
+<div class="card">
+
+<h1>
+Madam Jiii 🌷
+</h1>
+
+<h2>
+Do you like your birthday? 🎂
+</h2>
+
+<div class="button-area">
+
+<button
+class="yes"
+onclick="nextPage()">
+
+YES 💗
+
+</button>
+
+<button
+class="no"
+id="no1">
+
+NO 😭
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ==================================================
+     PAGE 2
+================================================== -->
+
+<section class="page">
+
+<div class="card">
+
+<h1>
+Okayyy... one more 👀
+</h1>
+
+<h2>
+Is 21st September a little special? 🌷
+</h2>
+
+<div class="button-area">
+
+<button
+class="yes"
+onclick="nextPage()">
+
+YES 💗
+
+</button>
+
+<button
+class="no"
+id="no2">
+
+NO 😭
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ==================================================
+     PAGE 3
+================================================== -->
+
+<section class="page">
+
+<div class="card">
+
+<h1>
+Then I have something to say... 🌷
+</h1>
+
+<p class="message">
+
+<b>
+Happy Birthday Madam Jiii 🌷🎂
+</b>
+
+<br><br>
+
+I hope this birthday brings you
+a ridiculous amount of happiness,
+lots of beautiful memories,
+and plenty of reasons to smile. 💗
+
+<br><br>
+
+You deserve a day that's
+as lovely, funny and special as you are. 🌷
+
+<br><br>
+
+And yes... I may have planned
+a little something for you. 👀
+
+</p>
+
+<button
+class="yes"
+onclick="nextPage()">
+
+Continue → 💗
+
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- ==================================================
+     PAGE 4 — FIRST 5 PHOTOS
+================================================== -->
+
+<section class="page">
+
+<div class="card">
+
+<h2>
+Okay... picture time 📸🌷
+</h2>
+
+<p>
+Five little reminders of how cute you can be. 😂
+</p>
+
+<div class="photo-grid">
+
+
+<div class="photo-card">
+
+<img src="photos/photo1.jpg">
+
+<p>
+
+How cute you look sometimes...
+
+I genuinely think you're Batgirl
+because I've never seen you two
+in the same room. 😂🦇
+
+</p>
+
+</div>
+
+
+
+<div class="photo-card">
+
+<img src="photos/photo3.jpg">
+
+<p>
+
+Okay, this picture is honestly
+too adorable. 😭🌷
+
+Someone needs to explain
+how you manage this.
+
+</p>
+
+</div>
+
+
+
+<div class="photo-card">
+
+<img src="photos/photo4.jpg">
+
+<p>
+
+This one has such a cute vibe...
+
+Definitely one of my favourites. 🥹💗
+
+</p>
+
+</div>
+
+
+
+<div class="photo-card">
+
+<img src="photos/photo5.jpg">
+
+<p>
+
+I was going to write something
+sensible here...
+
+Then I saw this picture
+and forgot everything. 😂
+
+</p>
+
+</div>
+
+
+
+<div class="photo-card">
+
+<img src="photos/photo6.jpg">
+
+<p>
+
+Madam Jiii, respectfully...
+
+You're making this website
+very difficult to keep normal. 😂🌷
+
+</p>
+
+</div>
+
+</div>
+
+
+<button
+class="yes"
+onclick="nextPage()">
+
+Next → 🌷
+
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- ==================================================
+     PAGE 5 — FLOWER SELECTION
+================================================== -->
+
+<section class="page">
+
+<div class="card">
+
+<h2>
+Choose your flowers 🌷🌹🌻
+</h2>
+
+<p>
+
+Choose <b>how many flowers</b> you want.
+
+Pick as many as you like. 💐
+
+</p>
+
+
+<div class="flower-grid">
+
+
+<button
+class="flower"
+onclick="selectFlower(this,'🌹')">
+
+🌹
+
+<span class="flower-name">
+Rose
+</span>
+
+</button>
+
+
+<button
+class="flower"
+onclick="selectFlower(this,'🌷')">
+
+🌷
+
+<span class="flower-name">
+Tulip
+</span>
+
+</button>
+
+
+<button
+class="flower"
+onclick="selectFlower(this,'🌻')">
+
+🌻
+
+<span class="flower-name">
+Sunflower
+</span>
+
+</button>
+
+
+<button
+class="flower"
+onclick="selectFlower(this,'🌸')">
+
+🌸
+
+<span class="flower-name">
+Cherry
+</span>
+
+</button>
+
+
+<button
+class="flower"
+onclick="selectFlower(this,'🌼')">
+
+🌼
+
+<span class="flower-name">
+Daisy
+</span>
+
+</button>
+
+
+<button
+class="flower"
+onclick="selectFlower(this,'💮')">
+
+💮
+
+<span class="flower-name">
+Blossom
+</span>
+
+</button>
+
+
+<button
+class="flower"
+onclick="selectFlower(this,'🏵️')">
+
+🏵️
+
+<span class="flower-name">
+Rosette
+</span>
+
+</button>
+
+
+<button
+class="flower"
+onclick="selectFlower(this,'🪻')">
+
+🪻
+
+<span class="flower-name">
+Lavender
+</span>
+
+</button>
+
+
+<button
+class="flower"
+onclick="selectFlower(this,'🌺')">
+
+🌺
+
+<span class="flower-name">
+Hibiscus
+</span>
+
+</button>
+
+
+<button
+class="flower"
+onclick="selectFlower(this,'🪷')">
+
+🪷
+
+<span class="flower-name">
+Lotus
+</span>
+
+</button>
+
+
+</div>
+
+
+<p id="flowerCount">
+0 flowers selected
+</p>
+
+
+<button
+class="yes"
+onclick="makeBouquet()">
+
+Make My Bouquet 💐
+
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- ==================================================
+     PAGE 6 — PREMIUM ANIMATED BOUQUET
+================================================== -->
+
+<section class="page">
+
+<div class="card">
+
+<h2>
+Your bouquet 💐
+</h2>
+
+<p>
+Made from exactly the flowers you chose. 🌷
+</p>
+
+
+<div
+class="bouquet"
+id="bouquet">
+</div>
+
+
+<p>
+
+A little bouquet,
+made just for you. 🌷❤️
+
+</p>
+
+
+<button
+class="yes"
+onclick="nextPage()">
+
+Keep going → 💗
+
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- ==================================================
+     PAGE 7 — REMAINING PHOTOS
+================================================== -->
+
+<section class="page">
+
+<div class="card">
+
+<h2>
+And a few more... ❤️
+</h2>
+
+
+<div class="last-photo-grid">
+
+<img src="photos/photo7.jpg">
+
+<img src="photos/photo8.jpg">
+
+<img src="photos/photo9.jpg">
+
+<img src="photos/photo10.jpg">
+
+<img src="photos/photo1.jpg">
+
+</div>
+
+
+<p class="message">
+
+Some pictures just deserve
+to be together. ❤️
+
+<br><br>
+
+And honestly...
+
+I think these pictures say
+more than I ever could. 🌷
+
+</p>
+
+
+<button
+class="yes"
+onclick="nextPage()">
+
+One last thing → 🌷
+
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- ==================================================
+     PAGE 8 — FINAL MESSAGE
+================================================== -->
+
+<section class="page">
+
+<div class="card">
+
+<h1>
+Happy Birthday,
+Madam Jiii 🌷🎂
+</h1>
+
+
+<p class="message">
+
+I hope this little surprise
+made you smile at least once. 🥹🌷
+
+<br><br>
+
+May this year bring you
+beautiful memories,
+unexpected happiness,
+and lots of moments
+you'll always remember. 💗
+
+<br><br>
+
+Keep smiling,
+keep being your wonderfully
+chaotic self,
+and never lose that little spark
+that makes you... you. 🌷
+
+<br><br>
+
+Have the <b>BEST BIRTHDAY EVER!</b> 🎉💐
+
+<br><br>
+
+And okay...
+
+maybe one tiny Messi reference
+had to make it into the website. 😂⚽
+
+</p>
+
+
+<p>
+
+— from someone who definitely
+spent way too much time making this. 😂🌷
+
+</p>
+
+</div>
+
+</section>
+
+
+
+<script>
+
+
+/* ==================================================
+   PAGE SYSTEM
+================================================== */
+
+let currentPage = 0;
+
+const pages =
+document.querySelectorAll(".page");
+
+
+function nextPage() {
+
+    pages[currentPage]
+        .classList.remove("active");
+
+    currentPage++;
+
+    pages[currentPage]
+        .classList.add("active");
+
+    window.scrollTo(0,0);
+
+}
+
+
+
+/* ==================================================
+   NO BUTTON
+   ONLY CLICK MOVES IT
+================================================== */
+
+const noMessages = [
+
+    "NO 😭",
+
+    "Really?? 👀",
+
+    "Are you sure? 😭",
+
+    "Think again? 🤨",
+
+    "Vampire Jiii, seriously? 🧛‍♀️🌷",
+
+    "Chalo Vampire Ji, ab YES daba do 😂💗"
+
+];
+
+
+const noButtons = [
+
+    document.getElementById("no1"),
+
+    document.getElementById("no2")
+
+];
+
+
+const noClicks = {
+
+    no1: 0,
+
+    no2: 0
+
+};
+
+
+function moveNoButton(button) {
+
+    const area =
+        button.parentElement;
+
+
+    const maxX =
+        area.clientWidth -
+        button.offsetWidth;
+
+
+    const maxY =
+        area.clientHeight -
+        button.offsetHeight;
+
+
+    const x =
+        Math.random() *
+        Math.max(maxX,0);
+
+
+    const y =
+        Math.random() *
+        Math.max(maxY,0);
+
+
+    button.style.position =
+        "absolute";
+
+
+    button.style.left =
+        x + "px";
+
+
+    button.style.top =
+        y + "px";
+
+
+    let count =
+        noClicks[button.id];
+
+
+    if (
+        count <
+        noMessages.length - 1
+    ) {
+
+        count++;
+
+        noClicks[button.id] =
+            count;
+
+    }
+
+
+    button.innerText =
+        noMessages[count];
+
+}
+
+
+noButtons.forEach(button => {
+
+    button.addEventListener(
+        "click",
+        function() {
+
+            moveNoButton(button);
+
+        }
+    );
+
+});
+
+
+
+/* ==================================================
+   FLOWER SELECTION
+================================================== */
+
+let selectedFlowers = [];
+
+
+function selectFlower(
+    button,
+    flower
+) {
+
+    const index =
+        selectedFlowers.indexOf(flower);
+
+
+    if(index !== -1) {
+
+        selectedFlowers
+            .splice(index,1);
+
+        button.classList
+            .remove("selected");
+
+    }
+
+    else {
+
+        selectedFlowers
+            .push(flower);
+
+        button.classList
+            .add("selected");
+
+    }
+
+
+    document.getElementById(
+        "flowerCount"
+    ).innerText =
+
+        selectedFlowers.length +
+        " flowers selected";
+
+}
+
+
+
+/* ==================================================
+   PREMIUM ANIMATED BOUQUET
+================================================== */
+
+function makeBouquet() {
+
+    if (selectedFlowers.length === 0) {
+        alert("Choose at least one flower 🌷");
+        return;
+    }
+
+    const bouquet = document.getElementById("bouquet");
+
+    const flowerPositions = [
+        [250,150], [170,205], [330,205],
+        [205,285], [295,285], [250,235],
+        [125,275], [375,275], [165,335], [335,335]
+    ];
+
+    const flowerDefs = {
+        "🌹": ["rose","#e85d75"],
+        "🌷": ["tulip","#f06c8c"],
+        "🌻": ["sunflower","#ffd84d"],
+        "🌸": ["blossom","#f5a2bd"],
+        "🌼": ["daisy","#ffe15a"],
+        "💮": ["blossom","#fff"],
+        "🏵️": ["rosette","#f29ab3"],
+        "🪻": ["lavender","#a98bd4"],
+        "🌺": ["hibiscus","#f15b73"],
+        "🪷": ["lotus","#f49bb6"]
+    };
+
+    function flowerSVG(type, x, y, delay, color) {
+        const common = `class="b-flower" style="animation-delay:${delay}s"`;
+
+        if (type === "rose" || type === "rosette") {
+            return `
+            <g ${common}>
+                <circle cx="${x}" cy="${y}" r="39" fill="${color}" stroke="#222" stroke-width="3"/>
+                <path d="M ${x-25} ${y+4} C ${x-42} ${y-18}, ${x-18} ${y-37}, ${x} ${y-25}
+                         C ${x+24} ${y-42}, ${x+43} ${y-12}, ${x+23} ${y+3}
+                         C ${x+42} ${y+20}, ${x+12} ${y+43}, ${x-7} ${y+27}
+                         C ${x-25} ${y+38}, ${x-43} ${y+16}, ${x-25} ${y+4}"
+                      fill="none" stroke="#222" stroke-width="3"/>
+                <path d="M ${x-15} ${y+4} C ${x-2} ${y-18}, ${x+22} ${y-12}, ${x+10} ${y+4}
+                         C ${x+25} ${y+20}, ${x-4} ${y+25}, ${x-15} ${y+4}"
+                      fill="none" stroke="#222" stroke-width="3"/>
+            </g>`;
+        }
+
+        if (type === "sunflower" || type === "daisy") {
+            let petals = "";
+            for (let i = 0; i < 10; i++) {
+                const a = i * 36 * Math.PI / 180;
+                const px = x + Math.cos(a) * 27;
+                const py = y + Math.sin(a) * 27;
+                petals += `<ellipse cx="${px}" cy="${py}" rx="13" ry="27"
+                    fill="${color}" stroke="#222" stroke-width="2"
+                    transform="rotate(${i*36} ${px} ${py})"/>`;
+            }
+            return `<g ${common}>${petals}
+                <circle cx="${x}" cy="${y}" r="10" fill="#d99a22" stroke="#222" stroke-width="2"/>
+            </g>`;
+        }
+
+        if (type === "tulip") {
+            return `
+            <g ${common}>
+                <path d="M ${x-34} ${y-3}
+                         C ${x-29} ${y-35}, ${x-13} ${y-22}, ${x} ${y-39}
+                         C ${x+12} ${y-22}, ${x+28} ${y-35}, ${x+34} ${y-3}
+                         C ${x+30} ${y+27}, ${x-29} ${y+27}, ${x-34} ${y-3} Z"
+                      fill="${color}" stroke="#222" stroke-width="3"/>
+            </g>`;
+        }
+
+        if (type === "lavender") {
+            let buds = "";
+            for (let i = -2; i <= 2; i++) {
+                buds += `<circle cx="${x + i*10}" cy="${y - 25 + Math.abs(i)*5}" r="9"
+                    fill="${color}" stroke="#222" stroke-width="2"/>`;
+                buds += `<circle cx="${x + i*10 + 5}" cy="${y - 8 + Math.abs(i)*3}" r="8"
+                    fill="${color}" stroke="#222" stroke-width="2"/>`;
+            }
+            return `<g ${common}>${buds}</g>`;
+        }
+
+        let petals = "";
+        const n = type === "lotus" ? 7 : 6;
+        for (let i = 0; i < n; i++) {
+            const a = i * 360 / n;
+            petals += `<ellipse cx="${x}" cy="${y-24}" rx="13" ry="28"
+                fill="${color}" stroke="#222" stroke-width="2"
+                transform="rotate(${a} ${x} ${y})"/>`;
+        }
+        return `<g ${common}>${petals}
+            <circle cx="${x}" cy="${y}" r="10" fill="#d99a22" stroke="#222" stroke-width="2"/>
+        </g>`;
+    }
+
+    let svg = `
+    <svg viewBox="0 0 500 560" xmlns="http://www.w3.org/2000/svg"
+         aria-label="Your selected flower bouquet">
+        <defs>
+            <linearGradient id="paperGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#ffdce8"/>
+                <stop offset="1" stop-color="#f3b7d0"/>
+            </linearGradient>
+            <linearGradient id="stemGrad" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#3f7148"/>
+                <stop offset=".5" stop-color="#86b879"/>
+                <stop offset="1" stop-color="#3f7148"/>
+            </linearGradient>
+        </defs>
+
+        <ellipse cx="250" cy="245" rx="190" ry="150" fill="#ffb6d2" opacity=".18"/>
+
+        <g class="b-leaf">
+            <path d="M250 375 C180 330 105 250 85 150 C170 145 240 200 250 300Z"
+                  fill="#6fa76a" stroke="#222" stroke-width="3"/>
+            <path d="M250 375 C320 330 395 250 415 150 C330 145 260 200 250 300Z"
+                  fill="#79ad70" stroke="#222" stroke-width="3"/>
+            <path d="M250 320 C225 250 220 145 250 55 C280 145 275 250 250 320Z"
+                  fill="#75a96c" stroke="#222" stroke-width="3"/>
+            <path d="M220 405 C160 380 115 330 90 285 C155 275 205 315 235 365Z"
+                  fill="#659b61" stroke="#222" stroke-width="3"/>
+            <path d="M280 405 C340 380 385 330 410 285 C345 275 295 315 265 365Z"
+                  fill="#659b61" stroke="#222" stroke-width="3"/>
+        </g>
+
+        <g stroke="#315b36" stroke-width="2" fill="none">
+            <path d="M250 55 L250 300 M250 125 L220 100 M250 175 L285 145 M250 225 L215 195 M250 270 L290 235"/>
+            <path d="M100 160 C155 205 195 260 235 350"/>
+            <path d="M400 160 C345 205 305 260 265 350"/>
+        </g>
+
+        <g stroke="url(#stemGrad)" stroke-width="7" stroke-linecap="round">
+            <path d="M250 500 C250 420 250 330 250 245"/>
+            <path d="M225 500 C235 420 215 345 170 205"/>
+            <path d="M275 500 C265 420 285 345 330 205"/>
+            <path d="M205 500 C220 420 190 365 125 275"/>
+            <path d="M295 500 C280 420 310 365 375 275"/>
+            <path d="M240 500 C245 420 205 385 165 335"/>
+            <path d="M260 500 C255 420 295 385 335 335"/>
+        </g>
+    `;
+
+    selectedFlowers.slice(0, 10).forEach((flower, i) => {
+        const data = flowerDefs[flower] || ["blossom","#f5a2bd"];
+        const [x, y] = flowerPositions[i];
+        svg += flowerSVG(data[0], x, y, 0.12 * i, data[1]);
+    });
+
+    svg += `
+        <g fill="#fff" stroke="#222" stroke-width="2">
+            <circle cx="145" cy="125" r="5"/><circle cx="160" cy="105" r="5"/>
+            <circle cx="350" cy="115" r="5"/><circle cx="365" cy="135" r="5"/>
+            <circle cx="125" cy="180" r="4"/><circle cx="385" cy="180" r="4"/>
+        </g>
+
+        <path d="M150 385 L350 385 L315 525 L185 525 Z"
+              fill="url(#paperGrad)" stroke="#d995b5" stroke-width="3"/>
+        <path d="M150 385 L205 525 M350 385 L295 525"
+              stroke="#fff" stroke-width="8" opacity=".25"/>
+
+        <path d="M220 425 Q250 440 280 425 L278 465 Q250 480 222 465Z"
+              fill="#55a9d9" stroke="#222" stroke-width="3"/>
+        <path d="M220 450 Q190 475 175 505 L215 485"
+              fill="#55a9d9" stroke="#222" stroke-width="3"/>
+        <path d="M280 450 Q310 475 325 505 L285 485"
+              fill="#55a9d9" stroke="#222" stroke-width="3"/>
+
+        <g class="b-sparkle" fill="#fff" stroke="#f09fbd" stroke-width="2">
+            <path d="M95 215 l5 13 13 5-13 5-5 13-5-13-13-5 13-5z"/>
+            <path d="M405 230 l4 10 10 4-10 4-4 10-4-10-10-4 10-4z"/>
+            <path d="M120 345 l4 10 10 4-10 4-4 10-4-10-10-4 10-4z"/>
+            <path d="M380 345 l4 10 10 4-10 4-4 10-4-10-10-4 10-4z"/>
+        </g>
+    </svg>`;
+
+    bouquet.innerHTML = svg;
+    nextPage();
+}
+
+</script>
+
+</body>
+</html>
